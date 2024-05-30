@@ -1,0 +1,102 @@
+/* Example of a linear gradient background */
+body {
+  background: linear-gradient(to right, #101010, #6546A1);
+  height: 100vh; /* Full viewport height */
+}
+
+ .navbar {
+  background: linear-gradient(to right, #101010, #6546A1);
+  display: flex;
+  justify-content: center;
+  top: 2.5%
+}
+
+.center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+
+.navbar-nav .nav-link{
+  color: #E3D5FF !important;   
+
+  font-weight: bold !important; /* Optional: Make the text bold */
+}
+
+.logo{
+  height: 95px; position: relative;
+  width: 70px;
+  top: 1.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.logo2{
+  position: relative;
+  top: -10%;
+}
+
+.Premium {
+  color: #E3D5FF !important; /* White text color */
+  font-weight: bold !important; /* Optional: Make the text bold */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px !important; /* Add some padding around the text */
+  border-radius: 10px;
+  border: 2px solid #E3D5FF  !important; /* White border */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add a subtle drop shadow */
+}
+
+.Premium:hover {
+  transform: translateY(-5px); /* Moves the button up by 5 pixels on hover */
+}
+
+.input-group {
+  display: flex;
+  position: relative;
+}
+
+.line-numbers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  background-color: #f5f5f5;
+  padding: 8px 4px;
+  font-family: monospace;
+  text-align: right;
+  color: #999;
+  border-right: 1px solid #ddd;
+}
+
+textarea {
+  padding-left: 40px;
+}
+
+
+.form-control{
+  height: 100px;
+}
+
+.space{
+    flex: 0 0 2.5% !important; /* 0.3/12 ≈ 0.025 or 2.5% */
+    max-width: 2.5% !important;
+  }
+
+  .textarea {
+    flex: 0 0 calc(11 / 24 * 100%) !important; /* 11/24 ≈ 0.4583 or 45.83% */
+    max-width: calc(11 / 24 * 100%) !important;
+  }
+
+  .form-control {
+    height: 500px; /* Adjust the value as needed */
+    /* color: #252525;  Change the hex value to your desired color for text */
+    background-color: #252525;
+  }
+  
+  .form-control::placeholder {
+    color: #252525; /* Change the hex value to your desired color for placeholder */
+  }
